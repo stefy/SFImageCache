@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63837D34171198E400F93BA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63837D33171198E400F93BA5 /* Foundation.framework */; };
+		63837D39171198E400F93BA5 /* SFImageCache.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 63837D38171198E400F93BA5 /* SFImageCache.h */; };
+		63837D3B171198E400F93BA5 /* SFImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 63837D3A171198E400F93BA5 /* SFImageCache.m */; };
+		63837D43171198E500F93BA5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63837D42171198E500F93BA5 /* SenTestingKit.framework */; };
+		63837D45171198E500F93BA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63837D44171198E500F93BA5 /* UIKit.framework */; };
+		63837D46171198E500F93BA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63837D33171198E400F93BA5 /* Foundation.framework */; };
+		63837D49171198E500F93BA5 /* libSFImageCache.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63837D30171198E400F93BA5 /* libSFImageCache.a */; };
+		63837D4F171198E500F93BA5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63837D4D171198E500F93BA5 /* InfoPlist.strings */; };
+		63837D52171198E500F93BA5 /* SFImageCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63837D51171198E500F93BA5 /* SFImageCacheTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63837D47171198E500F93BA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63837D28171198E400F93BA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63837D2F171198E400F93BA5;
+			remoteInfo = SFImageCache;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		63837D2E171198E400F93BA5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				63837D39171198E400F93BA5 /* SFImageCache.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		63837D30171198E400F93BA5 /* libSFImageCache.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSFImageCache.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		63837D33171198E400F93BA5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		63837D37171198E400F93BA5 /* SFImageCache-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SFImageCache-Prefix.pch"; sourceTree = "<group>"; };
+		63837D38171198E400F93BA5 /* SFImageCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFImageCache.h; sourceTree = "<group>"; };
+		63837D3A171198E400F93BA5 /* SFImageCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFImageCache.m; sourceTree = "<group>"; };
+		63837D41171198E500F93BA5 /* SFImageCacheTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFImageCacheTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63837D42171198E500F93BA5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		63837D44171198E500F93BA5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		63837D4C171198E500F93BA5 /* SFImageCacheTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SFImageCacheTests-Info.plist"; sourceTree = "<group>"; };
+		63837D4E171198E500F93BA5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		63837D50171198E500F93BA5 /* SFImageCacheTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFImageCacheTests.h; sourceTree = "<group>"; };
+		63837D51171198E500F93BA5 /* SFImageCacheTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFImageCacheTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63837D2D171198E400F93BA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63837D34171198E400F93BA5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63837D3D171198E500F93BA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63837D43171198E500F93BA5 /* SenTestingKit.framework in Frameworks */,
+				63837D45171198E500F93BA5 /* UIKit.framework in Frameworks */,
+				63837D46171198E500F93BA5 /* Foundation.framework in Frameworks */,
+				63837D49171198E500F93BA5 /* libSFImageCache.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63837D27171198E400F93BA5 = {
+			isa = PBXGroup;
+			children = (
+				63837D35171198E400F93BA5 /* SFImageCache */,
+				63837D4A171198E500F93BA5 /* SFImageCacheTests */,
+				63837D32171198E400F93BA5 /* Frameworks */,
+				63837D31171198E400F93BA5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63837D31171198E400F93BA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63837D30171198E400F93BA5 /* libSFImageCache.a */,
+				63837D41171198E500F93BA5 /* SFImageCacheTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63837D32171198E400F93BA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63837D33171198E400F93BA5 /* Foundation.framework */,
+				63837D42171198E500F93BA5 /* SenTestingKit.framework */,
+				63837D44171198E500F93BA5 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63837D35171198E400F93BA5 /* SFImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				63837D38171198E400F93BA5 /* SFImageCache.h */,
+				63837D3A171198E400F93BA5 /* SFImageCache.m */,
+				63837D36171198E400F93BA5 /* Supporting Files */,
+			);
+			path = SFImageCache;
+			sourceTree = "<group>";
+		};
+		63837D36171198E400F93BA5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63837D37171198E400F93BA5 /* SFImageCache-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63837D4A171198E500F93BA5 /* SFImageCacheTests */ = {
+			isa = PBXGroup;
+			children = (
+				63837D50171198E500F93BA5 /* SFImageCacheTests.h */,
+				63837D51171198E500F93BA5 /* SFImageCacheTests.m */,
+				63837D4B171198E500F93BA5 /* Supporting Files */,
+			);
+			path = SFImageCacheTests;
+			sourceTree = "<group>";
+		};
+		63837D4B171198E500F93BA5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63837D4C171198E500F93BA5 /* SFImageCacheTests-Info.plist */,
+				63837D4D171198E500F93BA5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63837D2F171198E400F93BA5 /* SFImageCache */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63837D55171198E500F93BA5 /* Build configuration list for PBXNativeTarget "SFImageCache" */;
+			buildPhases = (
+				63837D2C171198E400F93BA5 /* Sources */,
+				63837D2D171198E400F93BA5 /* Frameworks */,
+				63837D2E171198E400F93BA5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SFImageCache;
+			productName = SFImageCache;
+			productReference = 63837D30171198E400F93BA5 /* libSFImageCache.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		63837D40171198E500F93BA5 /* SFImageCacheTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63837D58171198E500F93BA5 /* Build configuration list for PBXNativeTarget "SFImageCacheTests" */;
+			buildPhases = (
+				63837D3C171198E500F93BA5 /* Sources */,
+				63837D3D171198E500F93BA5 /* Frameworks */,
+				63837D3E171198E500F93BA5 /* Resources */,
+				63837D3F171198E500F93BA5 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63837D48171198E500F93BA5 /* PBXTargetDependency */,
+			);
+			name = SFImageCacheTests;
+			productName = SFImageCacheTests;
+			productReference = 63837D41171198E500F93BA5 /* SFImageCacheTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63837D28171198E400F93BA5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = stefanfilip;
+			};
+			buildConfigurationList = 63837D2B171198E400F93BA5 /* Build configuration list for PBXProject "SFImageCache" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 63837D27171198E400F93BA5;
+			productRefGroup = 63837D31171198E400F93BA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63837D2F171198E400F93BA5 /* SFImageCache */,
+				63837D40171198E500F93BA5 /* SFImageCacheTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63837D3E171198E500F93BA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63837D4F171198E500F93BA5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63837D3F171198E500F93BA5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63837D2C171198E400F93BA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63837D3B171198E400F93BA5 /* SFImageCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63837D3C171198E500F93BA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63837D52171198E500F93BA5 /* SFImageCacheTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63837D48171198E500F93BA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63837D2F171198E400F93BA5 /* SFImageCache */;
+			targetProxy = 63837D47171198E500F93BA5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		63837D4D171198E500F93BA5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63837D4E171198E500F93BA5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63837D53171198E500F93BA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		63837D54171198E500F93BA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63837D56171198E500F93BA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SFImageCache.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SFImageCache/SFImageCache-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		63837D57171198E500F93BA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SFImageCache.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SFImageCache/SFImageCache-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		63837D59171198E500F93BA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SFImageCache/SFImageCache-Prefix.pch";
+				INFOPLIST_FILE = "SFImageCacheTests/SFImageCacheTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		63837D5A171198E500F93BA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SFImageCache/SFImageCache-Prefix.pch";
+				INFOPLIST_FILE = "SFImageCacheTests/SFImageCacheTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63837D2B171198E400F93BA5 /* Build configuration list for PBXProject "SFImageCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63837D53171198E500F93BA5 /* Debug */,
+				63837D54171198E500F93BA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63837D55171198E500F93BA5 /* Build configuration list for PBXNativeTarget "SFImageCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63837D56171198E500F93BA5 /* Debug */,
+				63837D57171198E500F93BA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		63837D58171198E500F93BA5 /* Build configuration list for PBXNativeTarget "SFImageCacheTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63837D59171198E500F93BA5 /* Debug */,
+				63837D5A171198E500F93BA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63837D28171198E400F93BA5 /* Project object */;
+}
