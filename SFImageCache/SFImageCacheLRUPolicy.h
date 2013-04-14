@@ -8,6 +8,6 @@
 
 #import "SFImageCache.h"
 
-@interface SFImageCacheLRUPolicy : SFImageCachePolicy
+@interface SFImageCacheLRUPolicy : NSObject<SFImageCachePolicy>
 
 @end

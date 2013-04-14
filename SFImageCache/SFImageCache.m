@@ -23,6 +23,8 @@
 // Returns the hash key of the given key using the SHA256 hashing algorithm. These hashes are represented on 32 bytes
 // and are guaranteed against colision.
 - (NSString*)hashKey:(NSString *)key;
+// Removes an image from the cache based by its hashkey.
+- (UIImage *)removeImageForHashKey:(NSString *)hashKey;
 
 @end
 
@@ -44,7 +46,7 @@
     return [self initWithMaxItems:maxItems maxCacheSize:maxCacheSize cachePolicy:lruPolicy];
 }
 
-- (id)initWithMaxItems:(unsigned int)maxItems maxCacheSize:(unsigned long)maxCacheSize cachePolicy:(SFImageCachePolicy *)cachePolicy {
+- (id)initWithMaxItems:(unsigned int)maxItems maxCacheSize:(unsigned long)maxCacheSize cachePolicy:(id<SFImageCachePolicy>)cachePolicy {
     self = [super init];
     if (self) {
         _maxCacheItems = maxItems;
@@ -84,8 +86,8 @@
 - (BOOL)addImage:(UIImage *)image forKey:(NSString *)key {
     NSString *hashKey = [self hashKey:key];
     // If key is already present in the cache, we first need to remove the existing image.
-    if ([self imageForKey:hashKey]) {
-        [self removeImageForKey:hashKey];
+    if ([_cache objectForKey:hashKey]) {
+        [self removeImageForHashKey:hashKey];
     }
     unsigned int imageSize = [self sizeOfImage:image];
     
@@ -94,12 +96,12 @@
         [self evictItemFromCache];
     }
     
-    if ((_currentItems + 1 <= _maxCacheItems) && (_currentSize + imageSize <= _maxCacheItems)) {
+    if ((_currentItems + 1 <= _maxCacheItems) && (_currentSize + imageSize <= _maxCacheSize)) {
         // Adds the new image to the cache.
         _currentItems++;
         _currentSize += imageSize;
         [_cache setObject:image forKey:hashKey];
-        [_cachePolicy addKey:key withImage:image];
+        [_cachePolicy addKey:hashKey withImage:image];
         
         return YES;
     }
@@ -108,9 +110,13 @@
 
 - (UIImage *)removeImageForKey:(NSString *)key {
     NSString *hashKey = [self hashKey:key];
-    UIImage *image = [self imageForKey:hashKey];
+    return [self removeImageForHashKey:hashKey];
+}
+
+- (UIImage *)removeImageForHashKey:(NSString *)hashKey {
+    UIImage *image = [_cache objectForKey:hashKey];
     if (image) {
-#if !__has_feature(objc_arc)        
+#if !__has_feature(objc_arc)
         // If non-arc we need to retain and autorelease the image otherwise the image could get dealloc'd when removed from
         // the dictionary.
         [[image retain] autorelease];
@@ -161,8 +167,10 @@
 }
 
 - (void)evictItemFromCache {
-    NSString *keyToEvict = [_cachePolicy nextKeyToEvict];
-    [self removeImageForKey:keyToEvict];
+    NSString *hashKeyToEvict = [_cachePolicy nextKeyToEvict];    
+    if ([self removeImageForHashKey:hashKeyToEvict]) {
+        NSLog(@"Item with hash key %@ was evicted from the cache", hashKeyToEvict);
+    }
 }
 
 @end

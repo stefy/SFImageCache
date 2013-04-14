@@ -11,10 +11,10 @@
 
 // Default value for the maximum number of images the cache supports.
 #define kSFImageCacheDefaultMaxItems                        100
-// Default value for the maximum size the cache supports.
-#define kSFImageCacheDefaultCacheSize                       100000
+// Default value for the maximum size the cache supports - 10 MB.
+#define kSFImageCacheDefaultCacheSize                       10485760
 
-@interface SFImageCachePolicy : NSObject
+@protocol SFImageCachePolicy <NSObject>
 
 // Returns the next key that needs to be evicted from the cache.
 - (NSString *)nextKeyToEvict;
@@ -29,13 +29,13 @@
 
 @property (nonatomic, assign) unsigned int maxCacheItems;
 @property (nonatomic, assign) unsigned long maxCacheSize;
-@property (readonly,  retain) SFImageCachePolicy *cachePolicy;
+@property (readonly,  retain) id<SFImageCachePolicy> cachePolicy;
 
 // Inits an SFImageCache object with a custom number of maximum items and a custom maximum cache size. This initializer
 // uses the default eviction policy (LRU).
 - (id)initWithMaxItems:(unsigned int)maxItems maxCacheSize:(unsigned long)maxCacheSize;
 // Same as before but with a custom cache policy.
-- (id)initWithMaxItems:(unsigned int)maxItems maxCacheSize:(unsigned long)maxCacheSize cachePolicy:(SFImageCachePolicy *)cachePolicy;
+- (id)initWithMaxItems:(unsigned int)maxItems maxCacheSize:(unsigned long)maxCacheSize cachePolicy:(id<SFImageCachePolicy>)cachePolicy;
 
 // Clears the contents of the cache.
 - (void)clearCache;

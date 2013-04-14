@@ -61,7 +61,7 @@
 - (void)removeKey:(NSString *)key {
     SFLinkedListNode *nodeToDelete = [_keyNodes objectForKey:key];
     [_keysList removeNode:nodeToDelete];
-    [_keyNodes removeObjectForKey:nodeToDelete];
+    [_keyNodes removeObjectForKey:key];
 }
 
 - (NSString *)nextKeyToEvict {

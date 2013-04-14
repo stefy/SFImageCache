@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		63837D34171198E400F93BA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63837D33171198E400F93BA5 /* Foundation.framework */; };
-		63837D39171198E400F93BA5 /* SFImageCache.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 63837D38171198E400F93BA5 /* SFImageCache.h */; };
 		63837D3B171198E400F93BA5 /* SFImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 63837D3A171198E400F93BA5 /* SFImageCache.m */; };
 		63837D43171198E500F93BA5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63837D42171198E500F93BA5 /* SenTestingKit.framework */; };
 		63837D46171198E500F93BA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63837D33171198E400F93BA5 /* Foundation.framework */; };
@@ -18,6 +17,14 @@
 		63837D5C1711996900F93BA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63837D5B1711996900F93BA5 /* UIKit.framework */; };
 		63837D5F1711B15200F93BA5 /* SFLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 63837D5E1711B15200F93BA5 /* SFLinkedList.m */; };
 		63837D621711B2F000F93BA5 /* SFImageCacheLRUPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63837D611711B2F000F93BA5 /* SFImageCacheLRUPolicy.m */; };
+		639924E9171ACCBD00ED9D06 /* test_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 639924E8171ACCBD00ED9D06 /* test_image.jpg */; };
+		63B4F74A171AB033000FC485 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63837D5B1711996900F93BA5 /* UIKit.framework */; };
+		63B4F74E171AB19B000FC485 /* SFImageCache.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 63837D38171198E400F93BA5 /* SFImageCache.h */; };
+		63B4F751171AB5B4000FC485 /* SFImageCacheLRUPolicy.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 63837D601711B2F000F93BA5 /* SFImageCacheLRUPolicy.h */; };
+		63B4F752171AB5B4000FC485 /* SFLinkedList.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 63837D5D1711B15200F93BA5 /* SFLinkedList.h */; };
+		63B4F753171AB601000FC485 /* SFImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 63837D3A171198E400F93BA5 /* SFImageCache.m */; };
+		63B4F754171AB601000FC485 /* SFImageCacheLRUPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63837D611711B2F000F93BA5 /* SFImageCacheLRUPolicy.m */; };
+		63B4F755171AB601000FC485 /* SFLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 63837D5E1711B15200F93BA5 /* SFLinkedList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +44,9 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				63837D39171198E400F93BA5 /* SFImageCache.h in CopyFiles */,
+				63B4F751171AB5B4000FC485 /* SFImageCacheLRUPolicy.h in CopyFiles */,
+				63B4F752171AB5B4000FC485 /* SFLinkedList.h in CopyFiles */,
+				63B4F74E171AB19B000FC485 /* SFImageCache.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +69,7 @@
 		63837D5E1711B15200F93BA5 /* SFLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLinkedList.m; sourceTree = "<group>"; };
 		63837D601711B2F000F93BA5 /* SFImageCacheLRUPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFImageCacheLRUPolicy.h; sourceTree = "<group>"; };
 		63837D611711B2F000F93BA5 /* SFImageCacheLRUPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFImageCacheLRUPolicy.m; sourceTree = "<group>"; };
+		639924E8171ACCBD00ED9D06 /* test_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test_image.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +86,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63837D43171198E500F93BA5 /* SenTestingKit.framework in Frameworks */,
 				63837D46171198E500F93BA5 /* Foundation.framework in Frameworks */,
+				63B4F74A171AB033000FC485 /* UIKit.framework in Frameworks */,
+				63837D43171198E500F93BA5 /* SenTestingKit.framework in Frameworks */,
 				63837D49171198E500F93BA5 /* libSFImageCache.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,6 +160,7 @@
 		63837D4B171198E500F93BA5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				639924E8171ACCBD00ED9D06 /* test_image.jpg */,
 				63837D4C171198E500F93BA5 /* SFImageCacheTests-Info.plist */,
 				63837D4D171198E500F93BA5 /* InfoPlist.strings */,
 			);
@@ -227,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63837D4F171198E500F93BA5 /* InfoPlist.strings in Resources */,
+				639924E9171ACCBD00ED9D06 /* test_image.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63B4F753171AB601000FC485 /* SFImageCache.m in Sources */,
+				63B4F754171AB601000FC485 /* SFImageCacheLRUPolicy.m in Sources */,
+				63B4F755171AB601000FC485 /* SFLinkedList.m in Sources */,
 				63837D52171198E500F93BA5 /* SFImageCacheTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,6 +385,7 @@
 		63837D59171198E500F93BA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
@@ -377,6 +394,7 @@
 				GCC_PREFIX_HEADER = "SFImageCache/SFImageCache-Prefix.pch";
 				INFOPLIST_FILE = "SFImageCacheTests/SFImageCacheTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -384,6 +402,7 @@
 		63837D5A171198E500F93BA5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
@@ -392,6 +411,7 @@
 				GCC_PREFIX_HEADER = "SFImageCache/SFImageCache-Prefix.pch";
 				INFOPLIST_FILE = "SFImageCacheTests/SFImageCacheTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
@@ -415,6 +435,7 @@
 				63837D57171198E500F93BA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63837D58171198E500F93BA5 /* Build configuration list for PBXNativeTarget "SFImageCacheTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +444,7 @@
 				63837D5A171198E500F93BA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
