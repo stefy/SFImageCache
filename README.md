@@ -4,15 +4,24 @@ A simple in-memory image cache static library.
 
 ## Usage ##
 
-**Initialization**
+Initialization
+
 	SFImageCache *imageCache = [[SFImageCache alloc] init];
-**Adding images to the cache**
+
+Adding images to the cache
+
 	[imageCache addImage:image forKey:@"myKey"];
-**Getting images from the cache**
+
+Getting images from the cache
+
 	[imageCache imageForKey:@"myKey"];
-**Clearing the cache**
+
+Clearing the cache
+
 	[imageCache clearCache];
-**Manually removing an image from the cache**
+
+Manually removing an image from the cache
+
 	[imageCache removeImageForKey:@"myKey"];
 
 ## Custom eviction policies ##
